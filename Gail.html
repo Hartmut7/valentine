@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day ❤️</title>
+    <style>
+        body {
+            background-color: #ffe4e1;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #ff6b81;
+        }
+        .envelope {
+            position: relative;
+            cursor: pointer;
+        }
+        .letter {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 100px;
+            background: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            transition: all 0.5s ease;
+        }
+        .hidden {
+            top: -150px;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Have a beautiful day! 😊💖</h1>
+        <p>Click the envelope to reveal a special message for you!</p>
+        <div class="envelope" onclick="showLetter()">
+            <img src="https://cdn-icons-png.flaticon.com/512/2099/2099199.png" alt="Envelope" width="150">
+            <div class="letter hidden" id="letter">
+                <p>Gail 👑,
+                <br>You are the sunrise that kisses the ocean's face. A masterpiece of nature, an ethereal grace 💕
+                <br> [Hartmut]</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showLetter() {
+            document.getElementById('letter').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
